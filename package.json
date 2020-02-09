@@ -1,0 +1,54 @@
+{
+  "name": "countries-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jonathan Gac <jonathan.gac@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook -p 1235 --ci",
+    "develop": "parcel src/index.html --no-autoinstall",
+    "build": "parcel build src/index.html --no-source-maps --detailed-report",
+    "format": "eslint --fix src/**/*.jsx",
+    "release": "standard-version",
+    "flow start": "flow start",
+    "flow stop": "flow stop",
+    "flow status": "flow status",
+    "flow coverage": "flow coverage"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rebass": "^4.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-flow": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@storybook/react": "^5.3.12",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-airbnb": "^4.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "flow-bin": "^0.118.0",
+    "husky": "^4.2.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

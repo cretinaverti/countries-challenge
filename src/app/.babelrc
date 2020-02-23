@@ -3,8 +3,5 @@
     "@babel/preset-react",
     "@babel/preset-flow",
     "babel-preset-airbnb"
-  ],
-  "plugins": [
-    "babel-plugin-relay"
   ]
 }

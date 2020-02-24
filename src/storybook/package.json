@@ -1,0 +1,20 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "Jonathan Gac <jonathan.gac@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook --ci -p 9000 -c ./ -s ../../dist/storybook --no-dll --preview-url=http://localhost:1337",
+    "develop": "PARCEL_AUTOINSTALL=false parcel -p 1337 index.html -d ../../dist/storybook --cache-dir ../../dist/storybook.cache --no-autoinstall"
+  },
+  "dependencies": {
+    "@storybook/react": "^6.0.0-alpha.19",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "parcel-bundler": "^1.12.4"
+  }
+}

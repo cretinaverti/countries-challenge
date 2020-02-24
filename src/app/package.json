@@ -5,15 +5,9 @@
   "author": "Jonathan Gac <jonathan.gac@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "storybook": "start-storybook -p 1235 --ci",
-    "relay": "relay-compiler",
     "develop": "PARCEL_AUTOINSTALL=false parcel index.html -d ../../dist/app --cache-dir ../../dist/.cache --no-autoinstall",
     "build": "parcel build index.html -d ../../dist/app --cache-dir ../../dist/.cache --no-source-maps --detailed-report",
-    "release": "standard-version",
-    "flow start": "flow start",
-    "flow stop": "flow stop",
-    "flow status": "flow status",
-    "flow coverage": "flow coverage"
+    "release": "standard-version"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.3",
@@ -23,14 +17,12 @@
     "rebass": "^4.0.7"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/preset-flow": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
-    "@storybook/react": "^5.3.12",
     "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
     "babel-preset-airbnb": "^4.4.0",
-    "flow-bin": "^0.118.0",
     "parcel-bundler": "^1.12.4"
   }
 }

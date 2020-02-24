@@ -9,7 +9,11 @@
     "api:develop": "yarn workspace api watch",
     "app:develop": "yarn workspace app develop",
     "app:build": "yarn workspace app build",
-    "format": "eslint --fix ./**/*.{js,jsx}"
+    "format": "eslint --fix ./**/*.{js,jsx}",
+    "flow start": "flow start",
+    "flow stop": "flow stop",
+    "flow status": "flow status",
+    "flow coverage": "flow coverage"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -21,6 +25,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0",
+    "flow-bin": "^0.119.0",
     "husky": "^4.2.1"
   },
   "husky": {
@@ -33,5 +38,4 @@
       "@commitlint/config-conventional"
     ]
   }
-
 }

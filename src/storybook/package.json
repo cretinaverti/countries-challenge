@@ -9,7 +9,7 @@
     "develop": "PARCEL_AUTOINSTALL=false parcel -p 1337 index.html -d ../../dist/storybook --cache-dir ../../dist/storybook.cache --no-autoinstall"
   },
   "dependencies": {
-    "@storybook/react": "^6.0.0-alpha.19",
+    "@storybook/react": "^6.0.0-alpha.21",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

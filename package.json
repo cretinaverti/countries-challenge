@@ -2,7 +2,7 @@
   "name": "countries-challenge",
   "private": true,
   "workspaces": [
-    "src/*"
+    "packages/*"
   ],
   "scripts": {
     "api:start": "yarn workspace api start",

@@ -1,0 +1,7 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jonathan Gac <jonathan.gac@icloud.com>",
+  "license": "MIT"
+}

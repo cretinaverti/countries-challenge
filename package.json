@@ -9,24 +9,26 @@
     "api:develop": "yarn workspace api watch",
     "app:develop": "yarn workspace app develop",
     "app:build": "yarn workspace app build",
-    "format": "eslint --fix ./**/*.{js,jsx}",
-    "flow start": "flow start",
-    "flow stop": "flow stop",
-    "flow status": "flow status",
-    "flow coverage": "flow coverage"
+    "lint": "eslint --fix ./**/*.{js,jsx,ts,tsx}"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "eslint": "^6.8.0",
+    "@typescript-eslint/eslint-plugin": "2.x",
+    "@typescript-eslint/parser": "2.x",
+    "babel-eslint": "10.x",
+    "eslint": "6.x",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-flowtype": "^4.6.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^2.3.0",
-    "flow-bin": "^0.119.0",
-    "husky": "^4.2.1"
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-react-app": "^5.2.0",
+    "eslint-plugin-flowtype": "4.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "2.x",
+    "husky": "^4.2.1",
+    "prettier": "^1.19.1"
   },
   "husky": {
     "hooks": {

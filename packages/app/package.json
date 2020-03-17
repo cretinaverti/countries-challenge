@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.tsx",
   "author": "Jonathan Gac <jonathan.gac@icloud.com>",
   "license": "MIT",
   "scripts": {
@@ -18,7 +18,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
     "babel-preset-react-app": "^9.1.1",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.8.3"
   }
 }

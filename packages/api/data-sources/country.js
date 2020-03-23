@@ -1,4 +1,3 @@
-// @flow
 import { RESTDataSource } from 'apollo-datasource-rest'
 
 export class CountrySource extends RESTDataSource {
@@ -11,11 +10,11 @@ export class CountrySource extends RESTDataSource {
     return this.get('')
   }
 
-  async byName(name: string) {
+  async byName(name) {
     return this.get(`name/${name}`)
   }
 
-  async byCode(code: string) {
+  async byCode(code) {
     return this.get(`alpha/${code}`)
   }
 }

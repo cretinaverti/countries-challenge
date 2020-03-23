@@ -5,8 +5,10 @@
   "author": "Jonathan Gac <jonathan.gac@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "develop": "PARCEL_AUTOINSTALL=false parcel index.html -d ../../dist/app --cache-dir ../../dist/.cache --no-autoinstall",
-    "build": "parcel build index.html -d ../../dist/app --cache-dir ../../dist/.cache --no-source-maps --detailed-report",
+    "develop": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "release": "standard-version"
   },
   "dependencies": {
@@ -17,11 +19,26 @@
     "rebass": "^4.0.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^10.0.1",
+    "@testing-library/user-event": "^10.0.0",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.3",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
-    "babel-preset-react-app": "^9.1.1",
-    "parcel-bundler": "^1.12.4",
-    "typescript": "^3.8.3"
+    "react-scripts": "^3.4.1",
+    "typescript": "~3.7.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -10,12 +10,14 @@ const CountriesNotFound = createError('CountriesNotFound', {
 })
 
 export const countryResolver = baseResolver.createResolver(
-  (_, { name }, { dataSources }) => dataSources.countries.byName(name)
-    .then(([response]) => response)
-    .catch(() => new CountryNotFound()),
+  (_, { name }, { dataSources }) =>
+    dataSources.countries
+      .byName(name)
+      .then(([response]) => response)
+      .catch(() => new CountryNotFound())
 )
 
 export const countriesResolver = baseResolver.createResolver(
-  (_, __, { dataSources }) => dataSources.countries.getAll()
-    .catch(() => new CountriesNotFound()),
+  (_, __, { dataSources }) =>
+    dataSources.countries.getAll().catch(() => new CountriesNotFound())
 )

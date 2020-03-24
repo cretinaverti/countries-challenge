@@ -18,7 +18,7 @@ export const Country = objectType({
     t.string('nativeName')
     t.int('population')
     t.string('region')
-    t.string('subRegion', (o) => o.subregion)
+    t.string('subRegion', o => o.subregion)
     t.list.string('topLevelDomain')
   },
 })

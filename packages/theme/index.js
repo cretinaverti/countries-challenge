@@ -1,9 +1,6 @@
 import spaces from './spaces'
 import colors from './colors'
-import {
-  fonts, fontSizes, fontWeights, lineHeights, text,
-} from './typography'
-
+import { fonts, fontSizes, fontWeights, lineHeights, text } from './typography'
 
 export default {
   spaces,

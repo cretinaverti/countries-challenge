@@ -8,7 +8,7 @@ export const withText = () => (
     sx={{
       color: 'red.9',
       fontSize: 6,
-      px: 4
+      px: 4,
     }}
   >
     Hello Button

@@ -5,7 +5,7 @@
   "author": "Jonathan Gac <jonathan.gac@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "storybook": "start-storybook --ci -p 9000 -c ./config -s ../../dist/storybook"
+    "start": "start-storybook --ci -p 9000 -c ./config -s ../../dist/storybook"
   },
   "dependencies": {
     "@storybook/react": "^6.0.0-alpha.21",

@@ -9,6 +9,7 @@
     "api:develop": "yarn workspace api watch",
     "app:develop": "yarn workspace app develop",
     "app:build": "yarn workspace app build",
+    "storybook": "yarn workspace storybook start",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx ."
   },
   "devDependencies": {

@@ -5,7 +5,7 @@ import { Flex, IconButton } from 'theme-ui'
 const { useEffect } = React
 
 type Props = {
-  onClick: () => void
+  onClick?: () => void
 }
 const BaseButtonBack = ({ onClick }: Props) => {
   useEffect(() => {
@@ -28,7 +28,8 @@ const BaseButtonBack = ({ onClick }: Props) => {
 
   return (
     <IconButton variant="secondary" onClick={onClick}>
-      <Flex as="i" id="icon" />
+      <Flex as="i" id="icon"
+      />
     </IconButton>
   )
 }

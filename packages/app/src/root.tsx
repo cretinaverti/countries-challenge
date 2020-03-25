@@ -1,15 +1,6 @@
 import * as React from 'react'
-import ApolloClient from 'apollo-boost'
-import { ApolloProvider } from '@apollo/react-hooks'
+import BaseButtonBack from './components/BaseButtonBack'
 
-const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
-})
-
-const Root = () => (
-  <ApolloProvider client={client}>
-    <p>Hello world!</p>
-  </ApolloProvider>
-)
+const Root = () => <BaseButtonBack />
 
 export default Root

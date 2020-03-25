@@ -1,22 +1,10 @@
 {
   "extends": [
     "react-app",
-    "airbnb-typescript",
     "plugin:prettier/recommended",
     "prettier",
     "prettier/@typescript-eslint",
     "prettier/babel",
     "prettier/react"
-  ],
-  "parserOptions": {
-    "project": "./packages/**/tsconfig.json",
-    "createDefaultProgram": true
-  },
-  "rules": {
-    "import/prefer-default-export": "off",
-    "@typescript-eslint/no-use-before-define": [
-      "error",
-      { "functions": false, "classes": true, "variables": true, "typedefs": true }
-    ]
-  }
+  ]
 }

@@ -1,33 +1,38 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "main": "src/index.tsx",
   "author": "Jonathan Gac <jonathan.gac@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "develop": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "release": "standard-version"
+    "app:develop": "react-scripts start",
+    "app:build": "react-scripts build",
+    "app:test": "react-scripts test",
+    "storybook:start": "start-storybook -p 9009 -s public",
+    "storybook:build": "build-storybook -s public"
   },
   "dependencies": {
-    "@apollo/react-hooks": "^3.1.3",
-    "apollo-boost": "^0.4.7",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "rebass": "^4.0.7"
+    "normalize.css": "^8.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "svg.js": "^2.7.1",
+    "theme-ui": "^0.3.1"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.1.1",
-    "@testing-library/react": "^10.0.1",
-    "@testing-library/user-event": "^10.0.0",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/preset-create-react-app": "^2.1.1",
+    "@storybook/react": "^5.3.17",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^25.1.4",
-    "@types/node": "^13.9.3",
-    "@types/react": "^16.9.23",
+    "@types/node": "^12.12.31",
+    "@types/react": "^16.9.25",
     "@types/react-dom": "^16.9.5",
-    "react-scripts": "^3.4.1",
-    "typescript": "~3.7.2"
+    "@types/theme-ui": "^0.3.1",
+    "react-scripts": "3.4.1",
+    "typescript": "^3.8.3"
   },
   "browserslist": {
     "production": [

@@ -40,8 +40,8 @@
     }
   },
   "lint-staged": {
-    "*": [
-      "yarn run lint"
+    "*.{js,jsx,ts,tsx}": [
+      "yarn run lint --quiet"
     ]
   },
   "commitlint": {

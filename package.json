@@ -10,7 +10,8 @@
     "app:develop": "yarn workspace app app:develop",
     "app:build": "yarn workspace app app:build",
     "storybook": "yarn workspace app storybook:start",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -29,7 +30,8 @@
     "eslint-plugin-react-hooks": "2.x",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.9",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "standard-version": "^7.1.0"
   },
   "husky": {
     "hooks": {

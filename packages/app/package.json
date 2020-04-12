@@ -7,14 +7,13 @@
     "app:develop": "react-scripts start",
     "app:build": "react-scripts build",
     "app:test": "react-scripts test",
-    "storybook:start": "start-storybook -p 9009 -s public",
+    "storybook:start": "start-storybook -p 9009 -s public --ci",
     "storybook:build": "build-storybook -s public"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "svg.js": "^2.7.1",
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {

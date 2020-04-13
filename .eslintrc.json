@@ -6,5 +6,11 @@
     "prettier/@typescript-eslint",
     "prettier/babel",
     "prettier/react"
-  ]
+  ],
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "import/order": ["error"]
+  }
 }

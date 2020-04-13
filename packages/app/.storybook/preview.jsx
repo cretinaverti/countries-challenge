@@ -1,7 +1,7 @@
 import React from 'react'
 import { addDecorator } from '@storybook/react'
 import { ThemeProvider } from 'theme-ui'
-import theme from '../src/theme'
+import theme from '@theme-ui/preset-polaris'
 import 'normalize.css'
 import { Box } from 'theme-ui'
 

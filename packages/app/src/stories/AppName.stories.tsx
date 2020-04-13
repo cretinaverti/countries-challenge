@@ -1,7 +1,7 @@
-import { action } from '@storybook/addon-actions'
 import React from 'react'
-import SearchInput from '../components/SearchInput'
+import { action } from '@storybook/addon-actions'
+import AppName from '../components/AppName'
 
-export default { title: 'SearchInput' }
+export default { title: 'AppName' }
 
-export const Default = () => <SearchInput onChange={action('change')} />
+export const Default = () => <AppName onClick={action('clicked')} />

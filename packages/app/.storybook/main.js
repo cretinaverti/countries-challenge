@@ -1,3 +1,5 @@
+const cracoLinaria = require("craco-linaria")
+
 module.exports = {
   stories: ['../src/**/*.stories.{js,jsx,ts,tsx}'],
   addons: [
@@ -7,4 +9,12 @@ module.exports = {
     '@storybook/addon-knobs/register',
     '@storybook/addon-viewport/register'
   ],
+  webpackFinal( config, { configType } ) {
+    return cracoLinaria.overrideWebpackConfig( {
+      webpackConfig: config,
+      context: {
+        env: configType.toLowerCase(),
+      },
+    } );
+  },
 }

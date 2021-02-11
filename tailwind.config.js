@@ -165,10 +165,15 @@ module.exports = {
         1000: '#451717',
       },
     },
+    aspectRatio: {
+      1: '1',
+    },
     extend: {},
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

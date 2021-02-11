@@ -12,7 +12,7 @@
     "start": "next start",
     "generate": "graphql-codegen",
     "storybook": "start-storybook -p 6006 --ci",
-    "format": "eslint --fix src/**/*.jsx",
+    "lint": "eslint --fix --ext .js,jsx,ts,tsx .",
     "release": "standard-version"
   },
   "dependencies": {

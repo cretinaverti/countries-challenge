@@ -3,7 +3,7 @@
     "airbnb-typescript"
   ],
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.eslint.json"
   },
   "rules": {
     // note you must disable the base rule as it can report incorrect errors

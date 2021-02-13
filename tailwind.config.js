@@ -170,7 +170,11 @@ module.exports = {
     aspectRatio: {
       1: '1',
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        inner: 'inset 0 0 0 1px hsla(0, 0%, 0%, 0.06)',
+      },
+    },
   },
   variants: {
     extend: {},

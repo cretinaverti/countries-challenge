@@ -1,0 +1,10 @@
+.placeholder {
+  @apply relative z-0
+}
+.placeholder:before {
+  @apply inset-0 z-10 rounded-full shadow-inner
+}
+
+.placeholder svg {
+  @apply h-full absolute left-1/2 transform -translate-x-1/2
+}

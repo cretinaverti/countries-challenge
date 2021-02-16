@@ -1,7 +1,7 @@
 schema: http://localhost:3000/api/graphql
 documents:
-  - components/**/!(*.d).{ts,tsx}
-  - pages/**/!(*.d).{ts,tsx}
+  - components/**/!(*.d).{ts,tsx,graphql}
+  - pages/**/!(*.d).{ts,tsx,graphql}
 generates:
   generated/graphql.tsx: # location for generated types, hooks and components
     plugins:

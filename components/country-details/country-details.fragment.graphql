@@ -1,0 +1,15 @@
+fragment CountryDetails on Country {
+  nativeName
+  population
+  capital
+  region
+  subRegion
+  languages {
+    name
+  }
+  currencies {
+    name
+  }
+  topLevelDomain
+  borders
+}

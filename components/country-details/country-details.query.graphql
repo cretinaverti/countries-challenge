@@ -1,0 +1,5 @@
+query CountryDetails($name: String!) {
+  country(name: $name) {
+    ...CountryDetails
+  }
+}

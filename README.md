@@ -1,78 +1,109 @@
-# Frontend Mentor - REST Countries API with color theme switcher
+<p align="center">
+    <h3 align="center">Fullstack Countries Challenge</h3>
 
-![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/cretinaverti/countries-challenge"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/cretinaverti/countries-challenge">View Demo</a>
+      ·
+    <a href="https://github.com/cretinaverti/countries-challenge/issues">Report Bug</a>
+      ·
+    <a href="https://github.com/cretinaverti/countries-challenge/issues">Request Feature</a>
+  </p>
+</p>
 
-## Welcome! 👋
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#the-stack">The Stack</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#develop">Develop</a></li>
+        <li><a href="#storybook">Storybook</a></li>
+        <li><a href="#production">Production</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-Thanks for checking out this front-end coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+## The Stack
+- [**TypeScript**](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html): the programming language for both backend and frontend;
+- [**React**](https://reactjs.org/) and [**Next.js**](https://nextjs.org/): as the frontend framework and [_middle-end_](https://medium.com/the-ideal-system/next-js-is-not-what-you-may-think-it-is-8423172e7401);
+- [**Apollo GraphQL client**](https://www.apollographql.com/apollo-client): the GraphQL client on the frontend;
+- [**Apollo Server**](https://www.apollographql.com/docs/apollo-server/): the server framework we'll use to serve the GraphQL API;
+    - [**RESTCountries**](https://restcountries.eu): Rest API which provides data;
+- [**Nexus Schema**](https://nexusjs.org/): a library for building _code-first_ GraphQL APIs;
+- [**GraphQL Code Generator**](https://graphql-code-generator.com): generate code from your GraphQL schema and operations;
+- [**Storybook**](https://storybook.js.org): development environment & documentation for components.
 
-**To do this challenge, you need a good understanding of JavaScript.**
+## Getting Started
 
-## The challenge
+### Prerequisites
+`Node.js > 14.8.0`
 
-Your challenge is to integrate with the [REST Countries API](https://restcountries.eu) to pull country data and display it like in the designs.
+The project includes an `.nvmrc` file so you can `nvm use` to use correct Node version.
 
-You can use any JavaScript framework/library on the front-end such as [React](https://reactjs.org) or [Vue](https://vuejs.org). You also have complete control over which packages you use to do things like make HTTP requests or style your project.
+### Installation
+1. Clone the repo
+    ```sh
+    git clone https://github.com/cretinaverti/countries-challenge.git
+    ```
+2. Install NPM packages
+    ```sh
+    cd countries-challenge \
+    yarn
+    ```
 
-Your users should be able to:
+## Usage
 
-- See all countries from the API on the homepage
-- Search for a country using an `input` field
-- Filter countries by region
-- Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode *(optional)*
+### Develop
+To start the development server:
+```sh
+yarn run develop
+````
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Storybook
+Storybook allows developer to code components in isolation & provides a generated documentation.
+```sh
+yarn run storybook
+```
 
-## Where to find everything
+### Production
+```sh
+yarn run build
+yarn run start
+````
 
-Your task is to build out the project to the designs inside the `/design` folder. 
+<!-- CONTRIBUTING -->
+## Contributing
 
-In this challenge, you will find mobile and desktop designs in light and dark mode color schemes for both pages.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. This should help train your eye to perceive differences in spacings and sizes.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/amazing-feature`)
+3. Commit your Changes (`git commit -m 'Add some amazing-feature'`)
+4. Push to the Branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-If you would like the Sketch file in order to see sizes etc, it is available to download from the challenge page on the site.
 
-There are no assets for this challenge, as the country flags will be pulled from the [REST Countries API](https://restcountries.eu) and you can use an icon font library for the icons.
+<!-- LICENSE -->
+## License
 
-There is a `style-guide.md` file, which contains the information you'll need, such as color palette and fonts.
-
-## Building your project
-
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
-
-1. Initialize your project as a public repository on [GitHub](https://github.com/). This will make it easier to share your code with the community if you need some help. If you're not sure how to do this, [have a read through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a URL. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, but we recommend using [ZEIT Now](http://bit.ly/fem-zeit). We've got more information about deploying your project with ZEIT below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes that you could create to make reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-7. If you'd like to try building pixel-perfect websites, we'd recommend checking out [PixelSnap](http://bit.ly/fem-pixelsnap). It's an awesome tool that let's you quickly measure anything on your screen. The Frontend Mentor community also gets 20% off!
-
-## Deploying your project
-
-As mentioned above, there are a number of ways to host your project for free. We recommend using [ZEIT Now](http://bit.ly/fem-zeit) as it's an amazing service and extremely simple to get set up with. If you'd like to use ZEIT, here are some steps to follow to get started:
-
-1. [Sign up to ZEIT Now](http://bit.ly/fem-zeit-signup) and go through the onboarding flow, ensuring your GitHub account is connected by using their [ZEIT Now for GitHub](https://zeit.co/docs/v2/git-integrations/zeit-now-for-github) integration.
-2. Connect your project to ZEIT Now from the ["Create a new project" page](https://zeit.co/new), using the "New Project From GitHub" button and selecting the project you want to deploy.
-3. Once connected, every time you `git push`, ZEIT Now will create a new [deployment](https://zeit.co/docs/v2/platform/deployments) and the deployment URL will be shown on your [ZEIT Dashboard](https://zeit.co/dashboard). You will also receive an email for each deployment with the URL.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Submit it on the platform so that other users will see your solution on the site. Other users will be able to give you feedback, which could help improve your code for the next project.
-2. Share your repository and live URL in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
-3. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor** including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-
-## Giving feedback
-
-Feedback is always welcome, so if you have any to give on this challenge please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+Distributed under the MIT License. See `LICENSE` for more information.
